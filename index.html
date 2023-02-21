@@ -14,11 +14,11 @@
         </div>
         <div class="right">
             <div class="hero">
-                This is the part where you sign up, right?
+                The chance to show off your moves is coming up fast! Sign up now!
             </div>
 
             <div class="register">
-                <h2>Sko den!</h2>
+                <h2>Skoden! Sign up here for the Social Distance Pow-wow!</h2>
                 <form action="#" method="get">
                     <div>
                         <label for="first_name">First Name</label>
@@ -27,6 +27,20 @@
                     <div>
                         <label for="family_name">Last Name</label>
                         <input type="text" id="family_name" name="family_name" required>
+                    </div>
+                    <div>
+                        <label for="tribe">Tribe</label>
+                        <input type="text" id="tribe" name="tribe">
+                    </div>
+                    <div>
+                        <label for="dance_category">Dance Category</label>
+                        <select name="dance_category" id="dance_category">
+                            <option value="women_trad">Women's Traditional</option>
+                            <option value="women_fancy">Women's Fancy</option>
+                            <option value="men_trad">Men's Traditional</option>
+                            <option value="men_grass">Men's Grass Dance</option>
+                            <option value="men_fancy">Men's Fancy</option>
+                        </select>
                     </div>
                     <div>
                         <label for="user_email">Email Address</label>
@@ -43,6 +57,14 @@
                     <div>
                         <label for="confirm_password">Confirm Password</label>
                         <input type="password" name="confirm_password" id="confirm_password" required>
+                    </div>
+                    <div>
+                        <p>Have you previously participated in this event? If so, what date was most recent?</p>
+                        <input type="radio" id="yes" name="previous_participation" value="Yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="previous_participation" value="No">
+                        <label for="no">No</label>
+                        <!-- TODO: Create date input -->
                     </div>
                 </form>
             </div>
